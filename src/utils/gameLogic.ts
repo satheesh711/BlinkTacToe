@@ -1,4 +1,4 @@
-import {  Player } from '../types/gameTypes'
+import {  Board, Player } from '../types/gameTypes'
 
 
 export const initializePlayers = (): Player[] => {
@@ -18,5 +18,10 @@ export const initializePlayers = (): Player[] => {
       score: 0
     }
   ];
+};
+
+// Initialize an empty board
+export const initializeBoard = (): Board => {
+  return Array(9).fill(null);
 };
 

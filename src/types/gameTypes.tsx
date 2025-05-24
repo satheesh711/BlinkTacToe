@@ -16,3 +16,14 @@ export interface EmojiPlacement {
 
 export type GameStatus = 'category-selection' | 'playing' | 'win';
 
+export type BoardCell = {
+  emoji: string;
+  playerId: number | null;
+} | null;
+
+export type Board = BoardCell[];
+
+export interface WinInfo {
+  playerId: number;
+  positions: number[];
+}
