@@ -14,14 +14,14 @@ export interface EmojiPlacement {
   timestamp: number;
 }
 
-export type GameStatus = 'category-selection' | 'playing' | 'win';
-
 export type BoardCell = {
   emoji: string;
   playerId: number | null;
 } | null;
 
 export type Board = BoardCell[];
+
+export type GameStatus = 'category-selection' | 'playing' | 'win';
 
 export interface WinInfo {
   playerId: number;
